@@ -1,2 +1,2 @@
-# HTML e CSS
- Repositório dos meus exercícios de estudo 
+# HTML/CSS
+ Repositório dos meus exercícios de estudo.
