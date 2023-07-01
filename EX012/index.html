@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com html5</title>
+    <style>
+        h1{
+            font-family:'Times New Roman', Times, serif;
+            color:rgb(35, 68, 68);
+            text-align: center;
+        }
+        p{
+        font-size: large;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(38, 85, 42);
+        }
+    </style>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video src="midia/bolacha.mp4" width="500px" controls></video><!--Usar diferentes arquivos de midia como, mp4,ogv,webm, etc. disponibilizá-los porque os navegadores precisam reconheccer ao menos um deles.-->
+    <!--Fazer desse jeito--><br>
+    <video width="400px" poster="imagens/lucas-e-samara.jpg" controls>
+        <source src="midia/bolacha.mp4" type="video/mp4"><!--navegador tentará baixa o vídeo para exibição na ordem apresentada aqui-->
+        <source src="midia/bolacha.m4v" type="video/mp4">
+        <source src="midia/bolacha.webm" type="video/webm">
+        <source src="midia/bolacha.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+    </video>
+    <h1>Inserindo vídeos do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/k__gEeVPiLg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h1>Agora um vídeo no vimeo</h1>
+    <p>Esse tem mais opções de customização, porém ele trava mais que o youtube, mas é ideal para vídeos que não devem ser públicos, mas o vimeo é pago</p>
+    <iframe src="https://player.vimeo.com/video/838262246?h=5660e2a59a&title=0&byline=0&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

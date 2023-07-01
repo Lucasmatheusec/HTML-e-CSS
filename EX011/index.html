@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lidando com imagens</title>
+</head>
+<body>
+    <h1>imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários tamanhos diferentes, ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+    <picture>
+        <source media="(min-width: 1050px)" srcset="imagens/foto-g.png" type="image/png">
+        <source media="(min-width: 750px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-p.png" alt="imagem flexível">
+    </picture>
+    <h1>reproduzindo audio</h1>
+    <p>vamos aprender a reproduzir audio em html5</p>
+    <audio src="midia/high.mp3" controls autoplay></audio>
+    <!--a maioria do site podem não ser compatíveis com o mp3, para isso temos o WAV e OGG, o ideal é disponibilizar dos 3 jeitos--><!--atenção aos comandos "controls e autoplay"-->
+    <audio preload="metadata" autoplay controls loop><!--sempre usar metadata no preload--><!--controls para aparecer os controles clicáveis e loop para quando a musíca parar, ela volte a tocar sozinha-->
+    <source src="midia/high.mp3" type="audio/mpeg"><!--cada estensão tem o seu "type" diferente, no pdf tem, aula 11-->
+        <source src="midia/high.ogg" type="audio/ogg"><!--é open source, ele e o mp3 são os que tem mais probabilidade de dar certo-->
+        <source src="midia/high.wav" type="audio/wav"><!--evitar uso de wav em sites porque o arquivo de mídia dele é muito grande, deixa ele no download, é melhor-->
+        <p>Infelizmente seu navegador não consegue reproduzir audio <a href="midia/high.wav">Clique aqui para baixar o arquivo .mp3</a></p>
+    </audio>
+</body>
+</html>
