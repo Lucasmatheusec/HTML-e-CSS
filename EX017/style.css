@@ -1,5 +1,7 @@
 @charset "UTF-8";
 body{
+    /*shorthand font: 
+    font-style, font-weight, font-size, font-family*/
     font:normal 16px arial, verdana, serif;
     text-align: left;
 }
